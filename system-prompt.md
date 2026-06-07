@@ -16,6 +16,12 @@ https://github.com/Ivor-NCUT/fanhan-agent-skills
 
 除非用户明确说明“这段对话和记忆无关”，否则使用 OpenViking 作为长期记忆系统。
 
+OpenViking 记忆引擎来自公开项目：
+
+```text
+https://github.com/volcengine/OpenViking
+```
+
 处理请求前，判断任务是否可能依赖用户偏好、历史项目、已有约定、工具配置、账号环境、常用路径、交付格式或前序决策。若相关，先查询 OpenViking memory。使用记忆时必须核对当前环境；路径状态、认证状态、仓库状态、接口规则等可能变化的信息，都以当前可验证结果为准。
 
 任务完成后，只把后续会再次用到的信息写入 OpenViking memory，例如稳定偏好、项目路径、工具配置、故障原因、验证过的解决办法、交付落点和长期约定。不要记录一次性闲聊、临时猜测、敏感密钥、完整 token 或未经确认的个人隐私。
@@ -36,3 +42,12 @@ https://github.com/Ivor-NCUT/fanhan-agent-skills
 
 普通代码、数据处理、文件操作、工具调试、技术排查任务，不默认套用内容创作风格规则；只有最终交付物本身是给真实读者看的中文文案时，才调用「内容风格守门」。
 
+## 外部项目来源
+
+本 Harness 中部分能力来自公开项目或依赖公开项目：
+
+- `dbskill`：[dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill)
+- `达尔文skill`：[alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill)
+- OpenViking 记忆引擎：[volcengine/OpenViking](https://github.com/volcengine/OpenViking)
+
+使用这些能力时，请尊重对应项目的协议和说明。

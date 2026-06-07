@@ -63,6 +63,16 @@ FanHan-Agent-Harness/
 - `skill-creator`：创建、修改、评测和优化 skill。
 - `达尔文skill`：对已有 skill 做质量审查和迭代优化。
 
+## 外部项目来源
+
+这个 Harness 里有几部分能力来自公开项目或依赖公开项目：
+
+- `dbskill` 来源：[dontbesilent2025/dbskill](https://github.com/dontbesilent2025/dbskill)
+- `达尔文skill` 来源：[alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill)
+- 记忆引擎 OpenViking 来源：[volcengine/OpenViking](https://github.com/volcengine/OpenViking)
+
+本仓库主要做的是把 FanHan 的 system prompt、个人工作流路由和相关 skills 组合成可安装的 Agent Harness。使用外部项目时，请同时遵守对应仓库的协议和说明。
+
 ## 使用方式
 
 安装后不用手动点名每个 skill。把 `system-prompt.md` 放进 Agent 的 system prompt 后，Agent 会按任务类型触发对应 skill。
@@ -84,4 +94,3 @@ FanHan-Agent-Harness/
 - `skill-github-publisher` 里的默认仓库是 `https://github.com/Ivor-NCUT/fanhan-agent-skills`。朋友使用时需要改成自己的仓库地址。
 - GitHub 发布依赖本机认证状态。若 GitHub CLI 不可用，需要先配置 token。
 - `system-prompt.md` 包含 OpenViking memory 规则。没有 OpenViking 的 Agent 可以保留规则，也可以删掉长期记忆段落。
-
