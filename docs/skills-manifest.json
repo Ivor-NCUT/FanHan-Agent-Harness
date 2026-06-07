@@ -1,0 +1,39 @@
+{
+  "name": "FanHan-Agent-Harness",
+  "system_prompt": "system-prompt.md",
+  "core_skills": [
+    {
+      "name": "内容风格守门",
+      "path": "skills/core/内容风格守门",
+      "purpose": "中文内容创作、润色、改写、标题和内容诊断的风格守门"
+    },
+    {
+      "name": "codex-dev-good-taste",
+      "path": "skills/core/codex-dev-good-taste",
+      "purpose": "开发、修 bug、代码审查、重构和架构文档同步的工程规范"
+    },
+    {
+      "name": "skill-迭代工作流",
+      "path": "skills/core/skill-迭代工作流",
+      "purpose": "用户确认满意后，把反馈沉淀回原 skill"
+    },
+    {
+      "name": "skill-github-publisher",
+      "path": "skills/core/skill-github-publisher",
+      "purpose": "新 skill 创建完成后发布到 GitHub"
+    }
+  ],
+  "dependency_skills": [
+    {
+      "name": "skill-creator",
+      "path": "skills/dependencies/skill-creator",
+      "purpose": "创建、修改、评测和优化 skill"
+    },
+    {
+      "name": "达尔文skill",
+      "path": "skills/dependencies/达尔文skill",
+      "purpose": "对已有 skill 做质量审查和迭代优化"
+    }
+  ]
+}
+
