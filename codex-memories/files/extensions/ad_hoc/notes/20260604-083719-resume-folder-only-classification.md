@@ -1,0 +1,1 @@
+When the user asks to classify resume batches from Feishu mail, default to a simple deliverable: create only the requested category folders and put resume files inside them. Avoid extra index, JSON, CSV, or metadata files unless the user explicitly asks for them. For the "面试 YC 公司运营" batch, classify into three folders: 留学生和211, 普通一本, 普通一本以下.
